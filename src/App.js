@@ -1,9 +1,12 @@
+import styles from "./styles/index.module.css";
+import Topnav from "./topnav";
 function App() {
   return (
-    <>
-      <h1>hihihihihi</h1>
-    </>
+    <div>
+      <Topnav />
+    </div>
   );
 }
+
 
 export default App;
