@@ -1,0 +1,91 @@
+.main {
+    padding: 40px 0 ;
+}
+
+.mainImg {
+max-height: 250px;
+display: block;
+margin: 0 auto;
+}
+
+.main_search {
+    width: 600px;
+    margin: 0 auto;
+}
+.search_form{
+    position: relative;
+}
+
+.searchBar{
+    width: 100%;
+    padding: 15px 150px 18px 17px;
+    border: 0;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+.searchBtn_kr {
+    position: absolute;
+    right: 13% ;
+    top: 16px;
+    width: 30px;
+    height: 20px;
+    box-sizing: border-box;
+    border: 0px;
+    color: white;
+    background: rgb(107, 107, 107);
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 11px;
+}
+
+.searchBtn_ys {
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    height: 36px;
+    width: 60px;
+    border: 0px;
+    color: rgb(228, 228, 228);
+    background-color: rgb(139, 43, 43);
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.search_content{
+    border-radius: 0;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
+    background-color: white;
+    
+}
+
+.search_content_div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 40px;
+
+   
+}
+
+.search_content_ul {
+    padding: 12px 0;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+
+.search_content_btn {
+    border-radius: 0;
+    border: 0;
+    cursor: pointer;
+    background-color: white;
+}
+.search_content_btn_click {
+    border-radius: 0;
+    border: 0;
+    cursor: pointer;
+
+}

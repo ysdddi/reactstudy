@@ -1,13 +1,16 @@
 @import "reset.css";
 html {
-    background-color: rgb(80, 66, 66);
+    background-color: rgb(77, 43, 43);
     margin: 0px;
     padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: 100%;
 }
 
-.base_div {
-    background-color: aqua;
-}
 
 .Topnav_bar {
     display: flex;
@@ -34,8 +37,10 @@ html {
     border: 0px;
     border-radius: 0;
     font-size: 20px;
+    font-weight: 800;
     padding: 15px;
     color: white;
+    cursor: pointer;
 }
 
 .Topnav_select {
@@ -55,9 +60,28 @@ html {
 }
 
 .Topnav_imgspan {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-right: 10px;
 }
 
 .Topnav_img {
     width: 30px;
     height: 30px;
+    margin-right: 5px;
+}
+.Topnav_bar2 {
+    display: flex;
+    padding-left: 15%;
+    background-color: rgb(82, 24, 24);
+
+}
+.Topnav_bar2_btn{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.664);
+    margin: 5px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
