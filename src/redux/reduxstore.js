@@ -1,16 +1,39 @@
-import { createStore } from "redux";
-import { SAVEUSERID,  } from "./actionTypes";
+import { SAVENICKNAME, SAVEUSERID, SAVEUSERIDFAIL, REQ } from "./actionTypes";
+import produce from "immer";
 
 const initialState = {
-  ID: [],
+  loading: false,
+  error: null,
+  nickname: [],
   payload: [],
 };
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case SAVEUSERID:
-      return {...state, payload : action.payload };
-        default:   
-    };
-  }
+    case REQ:
+      return { ...state, loading: true };
 
-export const store = createStore(reducer);
+    case SAVENICKNAME:
+      return {
+        ...state,
+        nickname: action.payload,
+      };
+
+    case SAVEUSERID:
+      return {
+        ...state,
+        loading: false,
+        payload: action.data,
+      };
+
+    case SAVEUSERIDFAIL:
+      return {
+        ...state,
+        loading: false,
+      error: action.message};
+
+    default:
+      return state;
+  }
+};
+
+export default reducer;

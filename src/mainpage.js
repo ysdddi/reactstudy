@@ -1,7 +1,7 @@
 import styles from "./styles/mainpage.module.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { saveUserId } from "./redux/actionTypes";
+import { saveNickname } from "./redux/actionTypes";
 import { useDispatch } from "react-redux";
 
 function MainPage() {
@@ -12,13 +12,13 @@ function MainPage() {
 
   const onClick = () => {
     if (searchValue !== "") {
-      dispatch(saveUserId(searchValue));
+      dispatch(saveNickname(searchValue));
       navigate("/Search");
     }
   };
   const onKeyPress = (e) => {
     if (e.key === "Enter" && searchValue !== "") {
-      dispatch(saveUserId(searchValue));
+      dispatch(saveNickname(searchValue));
       navigate("/Search");
     }
   };
