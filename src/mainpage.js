@@ -12,14 +12,18 @@ function MainPage() {
 
   const onClick = () => {
     if (searchValue !== "") {
-      dispatch(saveNickname(searchValue));
-      navigate("/Search");
+      navigate(`/Search/${searchValue}`);
+    }
+    else {
+      alert('닉네임을 입력해주세요');
     }
   };
   const onKeyPress = (e) => {
     if (e.key === "Enter" && searchValue !== "") {
-      dispatch(saveNickname(searchValue));
-      navigate("/Search");
+    navigate(`/Search/${searchValue}`);
+    }
+    else if (e.key ==="Enter" && searchValue ===""){
+      alert('닉네임을 입력해주세요')
     }
   };
 

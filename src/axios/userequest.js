@@ -11,3 +11,30 @@ export const userSearch = async (nickname) => {
     {}
   );
 };
+
+export const rankSearch = async (accessId) => {
+  return request(
+    `users/${accessId}/maxdivision`,
+    "get",
+    { Authorization: apiKey },
+    {}
+  );
+};
+
+export const matchSearch = async (accessId) => {
+  return request(
+    `users/${accessId}/matches?matchtype=50&offset=0&limit=100`,
+    "get",
+    { Authorization: apiKey },
+    {}
+  );
+};
+
+export const matchDetailSearch = async (matchId) => {
+  return request(
+    `matches/${matchId}`,
+    "get",
+    { Authorization: apiKey },
+    {}
+  );
+};

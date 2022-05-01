@@ -1,6 +1,8 @@
 import styles from "./styles/topnav.module.css";
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useLocation } from "react-router-dom";
 function Topnav() {
+  const {pathname} = useLocation();
+
   return (
     <>
       <div className={styles.Topnav_bar}>
@@ -19,7 +21,20 @@ function Topnav() {
             FIFA Online 4
           </div>
         </div>
-        <div>
+        <div className={styles.Topnav_rightbox}>       
+
+        {
+          pathname !== '/' &&
+          <>
+          <input className={styles.Topnav_searchbox}>
+            
+            </input>
+            <button className={styles.Topnav_searchBtn}>Go</button>
+
+          </>
+        }
+          
+
           <select className={styles.Topnav_select} defaultValue="Language">
             <option defaultValue="Korean">Korean</option>
             <option defaultValue="English">English</option>

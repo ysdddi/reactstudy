@@ -11,7 +11,7 @@ function App() {
           <Route path="/*" element={<Topnav />}>
             <Route index element={<MainPage />} />
             <Route path="Player" element={<Player />} />
-            <Route path="Search" element={<Search />} />
+            <Route path="Search/:username" element={<Search />} />
           </Route>
         </Routes>
     </div>

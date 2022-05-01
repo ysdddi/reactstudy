@@ -85,3 +85,28 @@ body {
     margin-bottom: 10px;
     cursor: pointer;
 }
+.Topnav_rightbox {
+    display: flex;
+    align-items: center;
+ 
+}
+.Topnav_searchbox {
+border: 0;
+font-size: 20px;
+width: 40%;
+}
+.Topnav_searchBtn {
+    margin-left: 0;
+    margin-right: 5px;
+    height: 25px;
+    width: 25px;
+    border: 0;
+    color: white;
+    font-size: 10px;
+    background-color: orange;
+    
+}
+.Topnav_searchBtn:hover {
+    cursor: pointer;
+    background-color: rgb(255, 136, 0);
+}
