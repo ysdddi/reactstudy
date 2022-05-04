@@ -10,7 +10,9 @@ export default function ToggleButtons() {
       setAlignment(newAlignment);
     }
   };
-
+/* <ToggleButton value="center"></ToggleButton>
+      <ToggleButton value="right"></ToggleButton>
+      <ToggleButton value="justify"></ToggleButton>*/
   return (
     <ToggleButtonGroup
       className="tgBtn"
@@ -19,10 +21,8 @@ export default function ToggleButtons() {
       exclusive
       onChange={handleAlignment}
     >
-      <ToggleButton value="left">sdf</ToggleButton>
-      <ToggleButton value="center"></ToggleButton>
-      <ToggleButton value="right"></ToggleButton>
-      <ToggleButton value="justify"></ToggleButton>
+      <ToggleButton value="left">공식경기 1:1</ToggleButton>
+     
     </ToggleButtonGroup>
   );
 }

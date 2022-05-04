@@ -5,7 +5,7 @@ export const apiKey =
 
 export const userSearch = async (nickname) => {
   return request(
-    `users?nickname=${nickname}`,
+    `v1.0/users?nickname=${nickname}`,
     "get",
     { Authorization: apiKey },
     {}
@@ -14,7 +14,7 @@ export const userSearch = async (nickname) => {
 
 export const rankSearch = async (accessId) => {
   return request(
-    `users/${accessId}/maxdivision`,
+    `v1.0/users/${accessId}/maxdivision`,
     "get",
     { Authorization: apiKey },
     {}
@@ -23,7 +23,7 @@ export const rankSearch = async (accessId) => {
 
 export const matchSearch = async (accessId) => {
   return request(
-    `users/${accessId}/matches?matchtype=50&offset=0&limit=100`,
+    `v1.0/users/${accessId}/matches?matchtype=50&offset=0&limit=100`,
     "get",
     { Authorization: apiKey },
     {}
@@ -32,9 +32,18 @@ export const matchSearch = async (accessId) => {
 
 export const matchDetailSearch = async (matchId) => {
   return request(
-    `matches/${matchId}`,
+    `v1.0/matches/${matchId}`,
     "get",
     { Authorization: apiKey },
     {}
   );
 };
+
+export const spPositionSearch = async () => {
+  return request(
+    `latest/spposition.json`,
+    "get",
+    { Authorization: apiKey },
+    {}
+  );
+}

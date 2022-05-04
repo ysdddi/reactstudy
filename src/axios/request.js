@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const SERVER = "https://api.nexon.co.kr/fifaonline4" + "/v1.0";
+export const SERVER = "https://api.nexon.co.kr/fifaonline4";
 
 // API request 모듈
 const request = async (url, method, headers = {}, jsonData) => {

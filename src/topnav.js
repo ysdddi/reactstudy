@@ -1,7 +1,27 @@
 import styles from "./styles/topnav.module.css";
 import { Link, Outlet, useLocation } from "react-router-dom";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 function Topnav() {
-  const {pathname} = useLocation();
+  const { pathname } = useLocation();
+  const navigate = useNavigate();
+  const [topSearchValue, setTopSearchValue] = useState("");
+  const setValue = (value) => setTopSearchValue(value);
+  //검색창 설정
+  const onClick = () => {
+    if (topSearchValue !== "") {
+      navigate(`/Search/${topSearchValue}`);
+    } else {
+      alert("닉네임을 입력해주세요");
+    }
+  };
+  const onKeyPress = (e) => {
+    if (e.key === "Enter" && topSearchValue !== "") {
+      navigate(`/Search/${topSearchValue}`);
+    } else if (e.key === "Enter" && topSearchValue === "") {
+      alert("닉네임을 입력해주세요");
+    }
+  };
 
   return (
     <>
@@ -21,19 +41,22 @@ function Topnav() {
             FIFA Online 4
           </div>
         </div>
-        <div className={styles.Topnav_rightbox}>       
-
-        {
-          pathname !== '/' &&
-          <>
-          <input className={styles.Topnav_searchbox}>
-            
-            </input>
-            <button className={styles.Topnav_searchBtn}>Go</button>
-
-          </>
-        }
-          
+        <div className={styles.Topnav_rightbox}>
+          {pathname !== "/" && (
+            <>
+              <input
+                onKeyPress={onKeyPress}
+                className={styles.Topnav_searchbox}
+                onChange={(e) => setValue(e.target.value)}
+                value={topSearchValue}
+                type="text"
+                placeholder="구단주명"
+              ></input>
+              <button onClick={onClick} className={styles.Topnav_searchBtn}>
+                Go
+              </button>
+            </>
+          )}
 
           <select className={styles.Topnav_select} defaultValue="Language">
             <option defaultValue="Korean">Korean</option>
@@ -58,7 +81,14 @@ function Topnav() {
       </div>
       <>
         <Outlet />
+
       </>
+      {pathname === "/" && (
+      <div className={styles.footerSpace}></div>)}
+        <div className={styles.footer}>
+          <p>Data based on NEXON DEVELOPERS</p>
+          <p>Fifa Online4</p>
+        </div>
     </>
   );
 }

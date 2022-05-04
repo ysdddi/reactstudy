@@ -1,112 +1,133 @@
 @import "reset.css";
 html {
-    background-color: rgb(77, 43, 43);
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    height: 100%;
+  background-color: rgb(77, 43, 43);
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
 }
 body {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
-
 .Topnav_bar {
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    border-radius: 0;
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    background-color: rgb(56, 6, 6);
-    width: 100%;
-    box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: rgb(56, 6, 6);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .Topnav_1thdiv {
-    background-color: rgb(82, 24, 24);
-    display: flex;
-    align-items: center;
+  background-color: rgb(82, 24, 24);
+  display: flex;
+  align-items: center;
 }
 
 .Topnav_btn {
-    margin-left: 0px;
-    background-color: rgb(82, 24, 24);
-    border: 0px;
-    border-radius: 0;
-    font-size: 20px;
-    font-weight: 800;
-    padding: 15px;
-    color: white;
-    cursor: pointer;
+  margin-left: 0px;
+  background-color: rgb(82, 24, 24);
+  border: 0px;
+  border-radius: 0;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 15px;
+  color: white;
+  cursor: pointer;
 }
 
 .Topnav_select {
-    background-color:  rgb(56, 6, 6);
-    color: rgba(255, 255, 255, 0.664);
-    height: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.123);
+  background-color: rgb(56, 6, 6);
+  color: rgba(255, 255, 255, 0.664);
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.123);
 }
 
 .Topnav_loginBtn {
-    background-color: rgb(138, 90, 90);
-    border-radius: 5px;
-    border: 0px;
-    height: 35px;
-    width: 80px;
-    margin-left: 5px;
+  background-color: rgb(138, 90, 90);
+  border-radius: 5px;
+  border: 0px;
+  height: 35px;
+  width: 80px;
+  margin-left: 5px;
 }
 
 .Topnav_imgspan {
-    display: flex;
-    align-items: center;
-    color: white;
-    padding-right: 10px;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding-right: 10px;
 }
 
 .Topnav_img {
-    width: 30px;
-    height: 30px;
-    margin-right: 5px;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
 }
 .Topnav_bar2 {
-    display: flex;
-    padding-left: 15%;
-    background-color: rgb(82, 24, 24);
-
+  display: flex;
+  padding-left: 15%;
+  background-color: rgb(82, 24, 24);
 }
-.Topnav_bar2_btn{
-    font-size: 18px;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.664);
-    margin: 5px 20px;
-    margin-bottom: 10px;
-    cursor: pointer;
+.Topnav_bar2_btn {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.664);
+  margin: 5px 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 .Topnav_rightbox {
-    display: flex;
-    align-items: center;
- 
+  display: flex;
+  align-items: center;
 }
 .Topnav_searchbox {
-border: 0;
-font-size: 20px;
-width: 40%;
+  border: 1px solid 0 white;
+  font-size: 14px;
+  width: 45%;
+  height: 23px;
+}
+.Topnav_searchbox:focus {
+ border: 1px solid orange;
+ margin-right: 1px;
+
+
+ 
 }
 .Topnav_searchBtn {
-    margin-left: 0;
-    margin-right: 5px;
-    height: 25px;
-    width: 25px;
-    border: 0;
-    color: white;
-    font-size: 10px;
-    background-color: orange;
-    
+  margin-left: 0;
+  margin-right: 15%;
+  border: 0;
+  height: 27px;
+  width: 10%;
+  color: white;
+  font-size: 10px;
+  background-color: orange;
 }
 .Topnav_searchBtn:hover {
-    cursor: pointer;
-    background-color: rgb(255, 136, 0);
+  cursor: pointer;
+  background-color: rgb(255, 136, 0);
+}
+.footer {
+  display: flex;
+  bottom: 0;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  font-weight: bold;
+  color: rgb(102, 102, 102);
+}
+.footer > p {
+  margin-bottom: 5px;
+}
+.footerSpace {
+  width: 100%;
+  height: 30vw;
 }

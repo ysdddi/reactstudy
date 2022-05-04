@@ -1,0 +1,226 @@
+.GKL {
+    top: 40%;
+    left: 4%;
+  }
+  .SWL {
+    top: 40%;
+    left: 30%;
+  }
+  .LBL {
+    top: 2%;
+    left: 20%;
+  }
+  .LWBL {
+    top: 2%;
+    left: 40%;
+  }
+  .LCBL {
+    top: 20%;
+    left: 20%;
+  }
+  .CBL {
+    top: 40%;
+    left: 20%;
+  }
+  .RCBL {
+    top: 60%;
+    left: 20%;
+  }
+  .RBL {
+    top: 80%;
+    left: 20%;
+  }
+  .RWBL {
+    top: 80%;
+    left: 40%;
+  }
+  .LDML {
+    top: 20%;
+    left: 37%;
+  }
+  .CDML {
+    top: 40%;
+    left: 37%;
+  }
+  .RDML {
+    top: 60%;
+    left: 37%;
+  }
+  .LML {
+    top: 2%;
+    left: 54%;
+  }
+  .LCML {
+    top: 20%;
+    left: 54%;
+  }
+  .CML {
+    top: 40%;
+    left: 54%;
+  }
+  .RCML {
+    top: 60%;
+    left: 54%;
+  }
+  .RML {
+    top: 80%;
+    left: 54%;
+  }
+  .LAML {
+    top: 5%;
+    left: 70%;
+  }
+  .CAML {
+    top: 40%;
+    left: 70%;
+  }
+  .RAML {
+    top: 75%;
+    left: 70%;
+  }
+  .LWL {
+    top: 2%;
+    left: 87%;
+  }
+  .LFL {
+    top: 20%;
+    left: 75%;
+  }
+  .LSL {
+    top: 20%;
+    left: 87%;
+  }
+  .STL {
+    top: 40%;
+    left: 87%;
+  }
+  .RSL {
+    top: 60%;
+    left: 87%;
+  }
+  .RFL {
+    top: 60%;
+    left: 75%;
+  }
+  .RWL {
+    top: 80%;
+    left: 87%;
+  }
+  .CFL {
+      top: 40%;
+      left: 75%;
+  }
+/*오른쪽*/
+.GKR {
+    top: 40%;
+    right: 4%;
+}
+.SWR {
+    top: 40%;
+    right: 30%;
+}
+.LBR {
+    top: 2%;
+    right: 20%;
+}
+.LWBR {
+    top: 2%;
+    right: 40%;
+}
+.LCBR {
+    top: 20%;
+    right: 20%;
+}
+.CBR {
+    top: 40%;
+    right: 20%;
+}
+.RCBR {
+    top: 60%;
+    right: 20%;
+}
+.RBR {
+    top: 80%;
+    right: 20%;
+}
+.RWBR {
+    top: 80%;
+    right: 40%;
+}
+.LDMR {
+    top: 20%;
+    right: 37%;
+}
+.CDMR {
+    top: 40%;
+    right: 37%;
+}
+.RDMR {
+    top: 60%;
+    right: 37%;
+}
+.LMR {
+    top: 2%;
+    right: 54%;
+}
+.LCMR {
+    top: 20%;
+    right: 54%;
+}
+.CMR {
+    top: 40%;
+    right: 54%;
+}
+.RCMR {
+    top: 60%;
+    right: 54%;
+}
+.RMR {
+    top: 80%;
+    right: 54%;
+}
+.LAMR {
+    top: 5%;
+    right: 70%;
+}
+.CAMR {
+    top: 40%;
+    right: 70%;
+}
+.RAMR {
+    top: 75%;
+    right: 70%;
+}
+.LWR {
+    top: 2%;
+    right: 87%;
+}
+.LFR {
+    top: 20%;
+    right: 75%;
+}
+.LSR {
+    top: 20%;
+    right: 87%;
+}
+.STR {
+    top: 40%;
+    right: 87%;
+}
+.RSR {
+    top: 60%;
+    right: 87%;
+}
+.RFR {
+    top: 60%;
+    right: 75%;
+}
+.RWR {
+    top: 80%;
+    right: 87%;
+}
+.CFR {
+    top: 40%;
+    right: 75%;
+}
+
