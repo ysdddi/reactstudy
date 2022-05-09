@@ -58,26 +58,17 @@ function Topnav() {
             </>
           )}
 
-          <select className={styles.Topnav_select} defaultValue="Language">
+          {/* <select className={styles.Topnav_select} defaultValue="Language">
             <option defaultValue="Korean">Korean</option>
             <option defaultValue="English">English</option>
-          </select>
           <button className={styles.Topnav_loginBtn}>Log In</button>
+          </select> */}
         </div>
       </div>
       <div className={styles.Topnav_bar2}>
         <Link to="/">
           <div className={`${styles.Topnav_bar2_btn}`}>Home</div>
-        </Link>
-        <Link to="/Player">
-          <div className={`${styles.Topnav_bar2_btn}`}>Player</div>
-        </Link>
-        <Link to="/Stats">
-          <div className={`${styles.Topnav_bar2_btn}`}>Stats</div>
-        </Link>
-        <Link to="/Ranking">
-          <div className={`${styles.Topnav_bar2_btn}`}>Ranking</div>
-        </Link>
+        </Link>      
       </div>
       <>
         <Outlet />
