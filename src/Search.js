@@ -20,6 +20,7 @@ import Typography from "@mui/material/Typography";
 import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
 import KeyboardIcon from "@mui/icons-material/Keyboard";
 import Button from "@mui/material/Button";
+import CircularProgress from '@mui/material/CircularProgress';
 
 function Search() {
   //  const [id, setId] = React.useState("");
@@ -29,6 +30,7 @@ function Search() {
   const [userInfo, setUserInfo] = useState(false);
   const [acList, setAcList] = useState(11);
   const [gameInfo, setGameInfo] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   //api 호출
   const Api = async () => {
     try {
@@ -70,28 +72,27 @@ function Search() {
 
         setUserInfo(result);
         setIsError(false);
+        setIsLoading(false);
       }
     } catch {
       setIsError(true);
+      setIsLoading(false);
     }
   };
 
   //페이지라우팅 초기렌더링
   useEffect(() => {
-    let componentMount = true;
-    if (componentMount) {
+   // let componentMount = true;
+  //  if (componentMount) {
       Api();
-    }
-    return () => (componentMount = false);
+  //  }
+   // return () => (componentMount = false);
   }, [username]);
 
-  //나중에지울것 (api  state 확인용)
-  useEffect(() => {
-    console.log(userInfo);
-  }, [userInfo]);
+ 
 
-  return (
-    <div className="main">
+      return ( 
+  <div className="main">
       <div className="sub">
         <div className="sub_main">
           {userInfo.division !== undefined ? (
@@ -100,25 +101,21 @@ function Search() {
               src={`https://ssl.nexon.com/s2/game/fo4/obt/rank/large/update_2009/ico_rank${userInfo.division?.image}.png`}
             />
           ) : (
-            <img
-              className="noRankIcon"
-              src={require("./img/fifalogo.png")}
-              alt="logo"
-            />
+            <CircularProgress />
           )}
           <div className="userInfo">
             <p>{userInfo.nickname}</p>
-            <p>{`레벨 : ${userInfo.level}`}</p>
+            <p>{userInfo ? `레벨 : ${userInfo.level}` : null }</p>
           </div>
-          <div>{`최고등급${
+          <div>{
             userInfo.division?.label
-              ? "-" + userInfo.division?.label
-              : "기록이 없습니다."
-          }`}</div>
+              ? "최고등급" + "-" + userInfo.division?.label
+              : null
+          }</div>
         </div>
       </div>
       <div className="mainColumn">
-        <div>left</div>
+        <div></div>
         <div className="Champions">
           <div className="Champions_header">
             <div className="explanation">
@@ -374,9 +371,9 @@ function Search() {
             )}
           </div>
         </div>
-        <div>right</div>
+        <div></div>
       </div>
-    </div>
+    </div> 
   );
 }
 export default Search;
