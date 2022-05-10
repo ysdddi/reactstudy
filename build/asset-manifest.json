@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.2655f141.css",
-    "main.js": "/static/js/main.68513b60.js",
+    "main.js": "/static/js/main.6a51f6a4.js",
     "static/media/fifamainimg.jpg": "/static/media/fifamainimg.50ff0c670941391ccc37.jpg",
     "static/media/fifalogo.png": "/static/media/fifalogo.92863ea798765f6be00b.png",
     "static/media/soccerfield.PNG": "/static/media/soccerfield.b9dbd4c8d121180ec20a.PNG",
     "index.html": "/index.html",
     "main.2655f141.css.map": "/static/css/main.2655f141.css.map",
-    "main.68513b60.js.map": "/static/js/main.68513b60.js.map"
+    "main.6a51f6a4.js.map": "/static/js/main.6a51f6a4.js.map"
   },
   "entrypoints": [
     "static/css/main.2655f141.css",
-    "static/js/main.68513b60.js"
+    "static/js/main.6a51f6a4.js"
   ]
 }

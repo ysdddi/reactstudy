@@ -293,7 +293,7 @@ function Search() {
                                         <p
                                           className={`playerPosition`} id={bigPosiInv(player.spPosition)}
                                         >
-                                          {posiSearch(player.spPosition).replace(/(L|R)/g, LRInverter)}
+                                        {posiSearch(player.spPosition)}
                                         </p>
                                         <img
                                           className="playerFace Right"
