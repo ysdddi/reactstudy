@@ -28,7 +28,7 @@ function Topnav() {
       <div className={styles.Topnav_bar}>
         <div className={styles.Topnav_1thdiv}>
           <Link to='/'>
-            <div className={styles.Topnav_btn} href='http://localhost:3000/'>
+            <div className={styles.Topnav_btn} href='/'>
               ys.gg
             </div>
           </Link>
