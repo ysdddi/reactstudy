@@ -165,6 +165,7 @@ function Search() {
                       match.playResult = "matchLose";
                     }
                   }
+                
 
                   //컨트롤러 변환
                   const controller = (userIndex) => {
@@ -220,6 +221,14 @@ function Search() {
                     }
                     else {
                       return split[1]
+                    }
+                  }
+                  //LR 인버터
+                  const LRInverter = (str) => {
+                    switch(str) {
+                      case "L" : return "R";
+                      case "R" : return "L";
+                      
                     }
                   }
                   if (acList > index) {
@@ -283,11 +292,11 @@ function Search() {
                                       3
                                     );
                                     return (
-                                      <div className={`playerDiv ${posiSearch(player.spPosition)}R`} key={index}>
+                                      <div className={`playerDiv ${posiSearch(player.spPosition).replace(/(L|R)/g, LRInverter)}R`} key={index}>
                                         <p
                                           className={`playerPosition`} id={bigPosiInv(player.spPosition)}
                                         >
-                                          {posiSearch(player.spPosition)}
+                                          {posiSearch(player.spPosition).replace(/(L|R)/g, LRInverter)}
                                         </p>
                                         <img
                                           className="playerFace Right"
